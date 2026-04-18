@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harini Selvakumar | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: radial-gradient(circle at top, #1e3a8a, #020617);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #94a3b8;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #6366f1, #3b82f6);
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(30, 41, 59, 0.6);
+      padding: 20px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    a { color: #38bdf8; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 data-aos="fade-down">Hi, I'm Harini Selvakumar👋</h1>
+  <p data-aos="fade-up">ECE Engineer | Embedded Systems | Frontend Developer</p>
+  <a href="#projects" class="btn" data-aos="zoom-in">View My Work</a>
+</header>
+
+<section id="about" data-aos="fade-right">
+  <h2>About Me</h2>
+  <div class="card">
+    Passionate Electronics and Communication Engineer with hands-on experience in embedded systems, AI, and frontend development. I love building real-world solutions that combine hardware and software.
+  </div>
+</section>
+
+<section id="skills" data-aos="fade-left">
+  <h2>Skills</h2>
+  <div class="card skills">
+    <span>Python</span>
+    <span>C</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Embedded Systems</span>
+    <span>IoT</span>
+    <span>Digital Circuits</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 data-aos="fade-up">Projects</h2>
+  <div class="grid">
+    <div class="card" data-aos="zoom-in">
+      <h3>AI Waste Detection</h3>
+      <p>Edge Impulse based smart waste classification system.</p>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <h3>Embedded IoT System</h3>
+      <p>Real-time monitoring using sensors and microcontrollers.</p>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <h3>Frontend UI Designs</h3>
+      <p>Modern responsive UI using HTML & CSS.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: h0450754@gmail.com</p>
+    <p>Location: Chengalpattu</p>
+    <p><a href="https://www.linkedin.com/in/harini-selvakumar-5a579727a">LinkedIn</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Harini Selvakumar</p>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+
+</body>
+</html>
